@@ -1,2 +1,4 @@
-package praktikum;public class IngredientTypeTest {
+package praktikum;
+
+public class IngredientTypeTest {
 }
