@@ -62,16 +62,5 @@ public class BurgerTest {
         Mockito.when(burger.getReceipt()).thenReturn("(==== Булка ====)\n= sause майонез =\n= filling котлета =\n(==== Булка ====)\n\nPrice: 13.2\n");
     }
 
-    @After
-    public void clearIngredients(){
-        if(burger.ingredients == null){
-            burger.addIngredient(new Ingredient(IngredientType.SAUCE, "майонез", 5.5f));
-            burger.removeIngredient(0);
-        } else {
-            for(int i = 0; i < burger.ingredients.size(); i++){
-                burger.removeIngredient(i);
-            }
-        }
-    }
 
 }
